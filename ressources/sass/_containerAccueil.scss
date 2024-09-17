@@ -1,0 +1,459 @@
+.container__accueil{
+   
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width:768px){
+    .container__accueil{
+        background: url('../assets/coverback.png');
+        background-size:cover;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width:100%;
+      }
+  }
+  @media (min-width:769px){
+    .container__accueil{
+        background: url('../assets/banner-top.png');
+        background-size:cover;
+        min-height: 100vh;
+        margin-top: 12vh;
+        margin-left: 0;
+        display: flex;
+        margin: 8% 5% 0 5%;
+      }
+  }
+  @media(min-width:1124px){
+    .container__accueil{
+        min-height: 88vh;
+       
+       
+    }
+  }
+  @media(min-width:1440px){
+    .compliments {
+        max-height: none;
+        min-height: 18vh;
+        justify-content: space-around;
+       padding: 0% 5% 0% 5%;  
+      }
+    .container__accueil{
+        max-width: 100%;
+      
+        width: auto;
+    }
+  }
+  @media (min-width:2000px){
+    .compliments img {
+        height: 85px;
+        margin-top: 0;
+    }
+    .container__accueil{
+      
+      margin: 6% 5% 0 5%;
+    
+  }}
+
+
+
+  //shop texte>>
+
+  
+@media (min-width : 320px) {
+
+
+    .image_mobile{
+     position: relative;
+     min-width: 450px;
+      top: 30%;
+    }
+   
+    .shop{
+      top:18%;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+     
+  }
+  .shop h1{
+      font-size: 1.05rem;
+  }
+  .shop h2{
+      margin-top: 20px;
+      font-size: 1.9rem;
+      line-height: 35px;
+      color: white;
+  }
+  .shop h3{
+      margin-top: 2px;
+      font-size: 1.3rem;
+  }
+  .btn{
+    margin-top: 40px;
+    padding: 17px 25px;
+    border-radius: 6px;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 10;
+    border-color: #1B604C;
+  }}
+      @media (min-width : 425px) {
+        
+       
+        .shop{
+          top:15%;
+      }
+      .shop h1{
+          font-size: 1.5rem;
+      }
+      .shop h2{
+          font-size: 2.5rem;
+          line-height: 45px;
+      }
+      .shop h3{
+          margin-top: 8px;
+          font-size: 1.8rem;
+      }
+      .btn{
+          margin-top: 0px;
+          padding:13px 30px;
+          font-size: 1.2rem;
+          font-weight: 10;
+      }
+     
+  
+  }
+  
+@media (min-width : 600px) {
+    .shop{
+      top:15%;
+      right:8%;
+      max-width:82%;
+  }
+  .shop h1{
+      font-size: 1.8rem;
+  }
+  .shop h2{
+      font-size: 3.5rem;
+      line-height: 59px;
+  }
+  .shop h3{
+      margin-top: 30px;
+      font-size: 2rem;
+  }
+  .btn{
+      padding:21px 38px;
+  }}
+  @media (min-width : 650px) {
+  
+  .shop h1{
+      font-size: 2rem;
+  }
+  .btn{
+      padding:21px 38px;
+  }}
+  @media (min-width : 735px) {
+    .image_mobile{
+      width:950px;
+      top:38.55%;
+    }
+  
+    
+    .shop h1{
+        font-size: 2.3rem;
+    }
+    .shop h2{
+        font-size: 4.3rem;
+    }
+    .btn{
+        padding:21px 38px;
+    }}
+    @media (min-width: 769px) {
+     
+      .image_mobile{
+        display: none;
+    }
+      .shop{
+        top:30%;
+        right:2%;
+        max-width:34%;
+    }
+   
+    .shop h1{
+        font-size: 1rem;
+    }
+    .shop h2{
+        font-size: 2rem;
+        line-height: 39px;
+    }
+    .shop h3{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .btn{
+        padding:11px 18px;
+    }
+  .btn:hover{
+    background-color: transparent;
+    color: #ffffff;
+    transition: 0.4s ease all;
+    height: auto;
+    border:outset 2px #000000;
+    
+  }
+  
+  }
+  @media (max-height: 830px) {
+
+    .compliments {
+        max-height: 120px;
+        display: flex;
+        overflow-x: auto;
+        background-color: #1B604C;
+        align-items: center;
+      }
+      .compliments .item {
+        min-width: 110px;
+        min-height: 110px;
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+        font-weight: 10;
+      }
+      
+      .compliments img {
+        min-height: 30px;
+        
+        margin-bottom: 5px;
+      }
+
+    .shop {
+        z-index: 1;
+        margin-top: 10% ;
+       max-width: none !important;
+        right: 0%;
+        left: 0%;
+      float:right;
+        text-align: center;
+        color: white;
+       
+       
+      }
+      
+      .shop h1 {
+        font-weight: 100;
+        font-size: 2rem;
+      }
+      
+      .shop h2 {
+        margin-top: 30px;
+        font-weight: 300;
+        font-size: 5.2rem;
+        line-height: 80px;
+      }
+      
+      .shop h3 {
+        margin-top: 40px;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 80px;
+      }
+      
+      .btn {
+        margin-top: 40px;
+        padding: 17px 25px;
+        border-radius: 6px;
+        color: green;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 10;
+        border-color: #1B604C;
+      }
+      
+
+
+  }
+  .compliments {
+    max-height: 120px;
+    display: flex;
+    overflow-x: auto;
+    background-color: #1B604C;
+    align-items: center;
+  }
+  .compliments .item {
+    min-width: 110px;
+    min-height: 110px;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 10;
+  }
+  
+  .compliments img {
+    min-height: 30px;
+    
+    margin-bottom: 5px;
+  }
+    @media (min-width: 962px) {
+      
+     
+      .shop{
+  
+  
+        max-width:28%;
+    }
+    .shop h1{
+        font-weight: 100;
+        font-size: 1rem;
+    }
+    .shop h2{
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 39px;
+    }
+    .shop h3{
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 80px;
+    }
+    .btn{
+        margin-top: 0px;
+        padding:11px 18px;
+        font-size: 1.2rem;
+        font-weight: 10;
+    }}
+    @media (min-width: 1024px) {
+        .compliments {
+            max-height: none;
+            min-height: 13vh;
+            justify-content: space-around;
+           padding: 0% 5% 0% 5%;  
+           margin: 0% 5% 0% 5%;
+          }
+        
+        .compliments{
+            overflow-x: none;
+          }
+      
+        .shop{
+            align-self: end;
+            margin: 10% 5%;
+            left:auto;
+            
+            margin:none;
+          }
+
+    }
+    /* lg */
+    @media (min-width: 1124px) {
+      
+   
+      .shop{
+        max-width:34%;
+    }
+    .shop h1{
+        font-size: 1.4rem;
+    }
+    .shop h2{
+        font-size: 2.7rem;
+        line-height: 55px;
+    }
+    .shop h3{
+        font-size: 1.8rem;
+    }
+    .btn{
+        margin-top: 40px;
+        padding:13px 21px;
+    }}
+    @media (min-width: 1280px) {
+      .shop{
+        max-width:30%;
+    }}
+    /* xl */
+    @media (min-width: 1336px) {
+        .compliments {
+          max-height: none;
+        }
+        .compliments .item {
+          min-height: 150px;
+          
+          font-size: 1rem;
+          margin: 0;
+        }
+        .item h4{
+          font-size: 0.8rem;
+          min-width: 100px;
+        }
+        .compliments img {
+          height: 65px;
+          margin-top: 25%;
+          margin-bottom: 10px;
+        }
+      }
+    @media (min-width: 1380px) {
+  
+      
+      .shop{
+        max-width:44%;
+    }
+    .shop h1{
+        font-size: 1.9rem;
+    }
+    .shop h2{
+        margin-top: 30px;
+        font-size: 4.2rem;
+        line-height: 70px;
+    }
+    .shop h3{
+        margin-top: 40px;
+        font-size: 2rem;
+    }
+    .btn{
+        padding:17px 25px;
+        font-size: 1.5rem;
+    }
+    .shop{
+      right:10%;
+    }
+  }
+    /* 2xl */
+    @media (min-width: 1536px) {
+    
+      .shop{
+        max-width:30%;
+        right:15%;
+    }
+    .shop h1{
+        font-size: 2rem;
+    }
+    .shop h2{
+        font-size: 3,2rem;
+        line-height: 80px;
+    }
+  }
+  @media (min-width: 1636px) {
+    .shop{
+      max-width: 50%;
+    }
+  }
+  @media(min-width:1900px){
+    .shop{
+        margin: 15% 10%;
+        
+        vertical-align: middle;
+        justify-self: center;
+  
+       
+        
+        
+      }
+  }
+
+
+  //compliments
+
+

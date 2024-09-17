@@ -1,0 +1,160 @@
+.overlay{
+    display: none;
+  }
+
+  @media(min-width: 1024px){
+    .modalSocial a svg{
+        width: 30px;
+      }
+      .modalSocial{
+        display: flex;
+      width: 52.5%;
+      margin: 5% auto;
+      }
+        .modal1 {
+          max-width: 50%;
+          padding: 7.5% 1.5% 5% 1.5%;
+        }
+        .modal1 p{
+          font-size: 1rem;
+          font-weight: 700;
+          font-family: "Nokora", sans-serif;
+        }
+        .modal2{
+         width:50%;
+          background-image: url("../assets/mapcommerce2.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: right;
+          height: 400px;
+          position: relative;
+          border-radius: 8px 0 0 8px;
+        }
+      .modal form input{
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        margin-top: 40px;
+        border-radius: 5px;
+        border: 1px solid #1B604C;
+      }
+      .poparb{
+        position: absolute;
+        top: -28px;
+        left: 65%;
+        width: 50px;
+      }
+      .sub{
+        width: 95%;
+        margin:0 auto;
+        left: 0;
+        right: 0;
+       
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #1B604C;
+        background-color: #1B604C;
+        color: white;
+        cursor: pointer;
+      }
+      .sub:hover{
+        background-color: white;
+        color: #1B604C;
+      }
+      .modal form input::placeholder{
+        color: #1B604C;
+      }
+      .modal form input:focus{
+        outline: none;
+      }
+      .modal form input:focus::placeholder{
+        color: #1B604C;
+      }
+      .close{
+        background: none;
+        border: none;
+        font-size: 5rem;
+        font-weight: bold;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 5%;
+        right: 5%;
+      }
+      .close:hover {
+        color:#1B604C;
+        
+      }
+        .overlay{
+        display: none;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index:20000;
+          background-color: rgba(0,0,0,0.7);
+          background-image: url("../assets/footerhd.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .modal{
+          max-width: 600px;
+          height: 400px;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          top:50vh;
+          transform: translateY(-50%);
+          background-color: white;
+          position: absolute;
+          border-radius: 8px;
+          display: flex;
+          filter: drop-shadow(0 0px 5px rgb(255, 255, 255));
+        }
+        .modal h2{
+          font-size: 2rem;
+          color: #1B604C;
+          text-align: center;
+          margin-top: 1%;
+          font-weight: 800;
+          font-family: "Nokora", sans-serif;
+         
+        }
+        
+        .show-modal{
+         display: block;
+          animation:  show 0.2s;
+      
+        }
+        @keyframes show{
+          from{
+          display:none;
+            transform: scale(0);
+          }
+          to{
+            display: block;
+            transform: scale(1);
+          }
+        }
+        .hide-modal{
+         display: none;
+          animation:  hide 0.25s;
+        }
+      
+        @keyframes hide{
+          from{
+            display: block;
+            transform: scale(1);
+          }
+          to{
+            display: hidden;
+            transform: scale(0);
+          }
+        }
+        
+  }

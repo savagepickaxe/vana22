@@ -1,0 +1,289 @@
+
+footer {
+  place-items: bottom;
+  background: #36382d;
+}
+
+footer ul {
+  position: initial;
+  margin-right: 45px;
+  height: auto;
+ 
+  color: white;
+}
+
+.liste_footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10%;
+ 
+}
+
+.liste_footer li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 45px;
+}
+
+footer ul li a {
+  position: relative;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.liste_footer h2 {
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.liste_footer h3 {
+  text-decoration: underline;
+}
+
+.media__bas {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.media ul li {
+  margin: 10%;
+  border: 0;
+}
+
+.media ul li a {
+  font-size: 0.7rem;
+  font-weight: 100;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.info {
+  text-align: center;
+  margin-top: 10%;
+}
+
+ .info h3 {
+  font-size: 1rem;
+  color: white;
+}
+.info h2{
+  font-size: 0.7rem;
+  color: white;
+}
+.name{
+  border-bottom: white 1px solid;
+  width:95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.name h1{
+  font-size: 2rem;
+  color: white;
+  font-weight: 100;
+}
+.politique{
+  text-align: center;
+  margin-top: 10%;
+  
+}
+.politique p {
+  font-size: 0.6rem;
+  color: white;
+  font-weight: 100;
+}
+
+.lang {
+  text-align: center;
+  margin-top: 10%;
+}
+a {
+  color: white;
+}
+@media (min-width:1024px){
+  .name{
+    border-bottom: white 1px solid;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  .name h1{
+    font-size: 5rem;
+    color: white;
+    font-weight: 100;
+    
+  }
+  .liste_footer {
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    grid-area: A;
+    max-width: 100%;
+    text-align: left;
+  }
+  .liste_footer li a {
+    align-self: right;
+    font-size: 1rem;
+    text-align: left;
+    margin: 0;
+    justify-content: space-between;
+    width: 10%;
+    font-family: "Nokora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .liste_footer li {
+    margin: 0;
+    margin: 6% 0% 6% 6%;
+    line-height: normal;
+    padding: auto;
+    text-align: right;
+  }
+  .info {
+    grid-area: B;
+    text-align: left;
+  }
+  .info h2{
+    font-family: "Nokora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .info h3{
+    text-decoration: underline;
+  }
+  .media {
+    grid-area: C;
+    text-align: left;
+    justify-content: left;
+  }
+  .media__bas {
+    text-align: left;
+    margin: 0;
+    justify-content: left;
+    max-width: auto;
+  }
+  .media ul li {
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    margin: 10% 10% 10% 0%;
+  }
+  .politique {
+    grid-area: D;
+  }
+  .lang {
+    grid-area: E;
+    justify-content: right;
+    margin: 0;
+  }
+  footer ul {
+    margin: 0;
+  }
+  .lang p {
+    font-size: 1rem;
+    margin: 8% 0% 0% 0%;
+    text-align: right;
+    font-family: "Nokora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .politique p {
+    font-size: 0.6rem;
+    margin: 5% 0% 0% 0%;
+    font-family: "Nokora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .pied {
+    display: grid;
+    grid-template-columns: 10% 26% 24% 30% 10%;
+    grid-template-areas: ". B . A ." ". C D E .";
+  }
+  .name {
+    min-height: 13vh;
+  }
+ a{
+  color:white;
+  font-family: "Nokora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ }
+}
+@media(min-width:1440px){
+
+  .media ul li a{
+    font-size: 1rem;
+  }
+  .lang{
+   
+    margin-top: 5%;
+  }
+  .politique{
+    margin-top:10%;
+  }
+
+  .politique p{
+    font-size: 0.8rem;
+  }
+
+  .info{
+    margin-top:15%;
+  }
+  .info h2{
+    font-size: 1.2rem;
+  }
+  .info h3{
+    font-size: 1.3rem;
+  }
+}
+@media(min-width:2000px){
+  .politique{
+    margin-top:0%;
+  }
+  
+.liste_footer li a{
+  font-size: 1.7rem;
+}
+.liste_footer{
+max-width: none;
+padding-left:33%;
+}
+  .lang{
+   
+    margin-top: 3%;
+  }
+  .lang p{
+    font-size: 1.2rem;
+  }
+  .politique{
+    margin-top:0;
+  }
+
+  .politique{
+    margin-top:0;
+  }
+
+  .politique p{
+    font-size: 1rem;
+  }
+  .info h2{
+    font-size: 1.3rem;
+  }
+  .info h3{
+    font-size: 1.8rem;
+  }
+.media ul li a{
+  font-size: 1rem;
+}
+  .info{
+    margin-top:15%;
+  }
+}

@@ -1,0 +1,211 @@
+@import url(../assets/Peachi-Medium.otf);
+@import "_footer.scss";
+@import "_header.scss";
+@import "_containerAccueil.scss";
+@import "_containerUn.scss";
+@import "_containerDeux.scss";
+@import "_containerTrois.scss";
+@import "_containerCinq.scss";
+@import "_containerSix.scss";
+@import "_containerSept.scss";
+@import "_modal.scss";
+@import "_loader.scss";
+@font-face {
+  font-family: "VANAFont";
+  src: url("../assets/Peachi-Medium.otf");
+}
+.wrapper{
+  overflow: hidden;
+}
+.text-wrapper{
+  display: none;
+}
+.vertextL , .vertextR , .vertextL--prod{
+  display: none;
+}
+.svgt{
+  display: none;
+
+}
+.content h1{
+  display: none;
+}
+.hidin{
+  display: block;
+}
+.hid{
+    display: none;
+}
+.containerA { 
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "VANAFont";
+}
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+.shopify-buy-frame {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+.vertextL--prod{
+  display: block;
+  letter-spacing: 5px;
+  writing-mode: vertical-rl;
+  position: absolute;
+  align-self: start;
+  top: 0;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-family: "Nokora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:0.8rem;
+  z-index: 10;
+}
+  .text-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background-color:#1B604C;
+    border-bottom: white 1px solid;
+    overflow: hidden;
+  }
+  @keyframes move-rtl {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1000%);
+    }
+  }
+  .text-wrapper h1{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:white;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rtl 40000ms linear infinite;
+  }
+  .svgt{
+  display: inline;
+  }
+  .mission{
+    color: white;
+  }
+  .vertextR{
+    display: block;
+    writing-mode:vertical-lr;
+   transform: rotate(180deg);
+    position: absolute;
+    align-self: start;
+    margin-top:3% ;
+    width: 90%;
+    margin-left: 2%;
+    color: #1B604C;
+    font-family: "Nokora", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:0.8rem;
+    z-index: 10;
+    letter-spacing: 5px;
+  }
+ .vertextL {
+  display: block;
+  letter-spacing: 5px;
+  writing-mode: vertical-rl;
+  position: absolute;
+  align-self: start;
+  margin-top:5% ;
+  height: 40%;
+  margin-left: 2%;
+  font-family: "Nokora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:0.8rem;
+  z-index: 10;
+ }
+ .cinq__tour .vertextL{
+  color:#1B604C;
+ }
+  .hidin{
+    display: none;
+}
+  .item{
+    margin: 0;
+  }
+  .content h1{
+    display: block;
+  }
+ .char{
+  transform: translateY(115px);
+  transition: transform 0.8s;
+ }
+ .imagean{
+  height: 100vh;
+  position:absolute;
+  width: 100%;
+  top:0;
+  z-index: 3000;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  transition: clip-path 1s;
+ }
+ .content{
+  position: absolute;
+  display: grid;
+  place-items: center;
+ }
+ .content h1{
+  font-size: 8rem;
+  color:#1B604C;
+  font-weight: 900;
+ }
+   .imageanime{
+    background: url('../assets/louis-paulin-XvJ4OC7wmjM-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+   }
+    .hid{
+        display:block;
+    }
+}
+@media (min-width: 1440px) {
+  .container__un .vertextL{
+    margin-top: 1%;
+    margin-left: 4.2%;
+  }
+  .vertextL , .vertextR {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 2000px) {
+  .item h4{
+    font-size: 1.5rem;
+   min-width: none; 
+   max-width: none;
+  }
+}
+@media (min-width: 1900px) {
+  h5, h6 {
+    font-size: 4rem;
+}
+}
+
